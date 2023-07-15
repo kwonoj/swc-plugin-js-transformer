@@ -1,0 +1,26 @@
+{
+  "name": "swc-plugin-js-transformer",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kwonoj/swc-plugin-js-transformer.git"
+  },
+  "keywords": [],
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "target/wasm32-wasi/release/swc_plugin_.wasm"
+  ],
+  "author": "OJ Kwon <kwon.ohjoong@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kwonoj/swc-plugin-js-transformer/issues"
+  },
+  "homepage": "https://github.com/kwonoj/swc-plugin-js-transformer#readme"
+}
