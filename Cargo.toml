@@ -10,9 +10,14 @@ repository = "https://github.com/kwonoj/swc-plugin-js-transformer"
 crate-type = ["cdylib"]
 
 [dependencies]
+boa_engine = { version = "0.17.0" }
+serde = { version = "1.0.160" }
+serde_json = { version = "1.0.96" }
+lazy-regex = { version = "3.0.0" }
 swc_core = { version = "0.79.14", features = [
   "ecma_ast",
+  "ecma_ast_serde",
   "ecma_parser",
+  "ecma_codegen",
   "ecma_plugin_transform",
 ] }
-boa_engine = { version = "0.17.0" }

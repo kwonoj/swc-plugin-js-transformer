@@ -1,10 +1,10 @@
 {
   "name": "swc-plugin-js-transformer",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "A swc plugin runs JS visitor transformer",
+  "main": "./target/wasm32-wasi/release/swc_plugin_js_transformer.wasm",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cargo build --target wasm32-wasi --release && node test.js"
   },
   "repository": {
     "type": "git",
@@ -15,12 +15,15 @@
     "package.json",
     "README.md",
     "LICENSE",
-    "target/wasm32-wasi/release/swc_plugin_.wasm"
+    "target/wasm32-wasi/release/swc_plugin_js_transformer.wasm"
   ],
   "author": "OJ Kwon <kwon.ohjoong@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kwonoj/swc-plugin-js-transformer/issues"
   },
-  "homepage": "https://github.com/kwonoj/swc-plugin-js-transformer#readme"
+  "homepage": "https://github.com/kwonoj/swc-plugin-js-transformer#readme",
+  "devDependencies": {
+    "@swc/core": "^1.3.69"
+  }
 }
